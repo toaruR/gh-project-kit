@@ -89,6 +89,11 @@ function Ensure-Field {
 
 Assert-Gh
 
+if ($Owner -eq "@me") {
+    # `gh project link` は "@me" をリポジトリオーナーと照合できずエラーになるため、実ログイン名に解決する。
+    $Owner = (gh api user --jq ".login").Trim()
+}
+
 $project = Get-OrCreate-Project -Owner $Owner -Title $Title
 $projectNumber = $project.number
 
