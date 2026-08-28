@@ -1,0 +1,29 @@
+[
+  {
+    "title": "ログイン画面を作る",
+    "body": "## 目的\nユーザーがメールアドレス/パスワードでログインできるようにする。\n\n## 要件\n- ログインフォームの実装\n- 認証失敗時のエラー表示\n\n## 完了条件\n- ログイン/ログアウトが動作する\n- E2Eテストが通る",
+    "labels": ["enhancement"],
+    "priority": "🔴 High",
+    "start": "2026-09-01",
+    "target": "2026-09-05",
+    "estimate": 5
+  },
+  {
+    "title": "Googleログイン対応",
+    "body": "## 目的\nOAuthでのソーシャルログインに対応する。\n\n## 要件\n- Google OAuthクライアントの設定\n- 既存アカウントとの紐付け\n\n## 完了条件\n- Googleアカウントでログインできる",
+    "labels": ["enhancement"],
+    "priority": "🟡 Medium",
+    "start": "2026-09-03",
+    "target": "2026-09-08",
+    "estimate": 3
+  },
+  {
+    "title": "ユーザーDBを作る",
+    "body": "## 目的\nユーザー情報を永続化するテーブルを用意する。\n\n## 要件\n- users テーブルのスキーマ設計\n- マイグレーション作成\n\n## 完了条件\n- マイグレーションが本番相当のDBに適用できる",
+    "labels": ["enhancement"],
+    "priority": "🔴 High",
+    "start": "2026-09-01",
+    "target": "2026-09-03",
+    "estimate": 3
+  }
+]

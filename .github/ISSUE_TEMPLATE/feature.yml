@@ -1,0 +1,37 @@
+name: Feature
+description: 新機能・タスクの起票
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的
+      description: なぜこれをやるのか
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 要件
+      description: 何を満たす必要があるか(箇条書き推奨)
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 完了条件
+      description: どうなったら Done とみなすか
+    validations:
+      required: true
+
+  - type: input
+    id: estimate
+    attributes:
+      label: 見積り(Estimate)
+      description: ポイントまたは時間の目安
+    validations:
+      required: false
